@@ -9,7 +9,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Author settings
 author: Jennifer Lotz # add your name
 author-pic: jenlotz.jpg
-about-author: My name is Jennifer Lotz.  I'm an astronomer at the Space Telescope Science Institute, hunting for the first galaxies in the universe and watching galaxies collide (v-e-r-y s-l-o-w-l-y). 
+about-author: My name is Jennifer Lotz.  
+I'm an astronomer at the Space Telescope Science Institute, 
+hunting for the first galaxies in the universe and 
+watching galaxies collide with the Hubble Space Telescope. 
 
 # Contact links
 email: lotz@stsci.edu # Add your Email address
