@@ -3,11 +3,11 @@ layout: post
 title: My First Page 
 date:   2017-09-14
 description: test page # Add post description (optional)
-img: bmore_love.jpeg # Add image post (optional)
-tags: [Blog, Mountains]
+img: HFF-Abell370-cluster-crop-third-161103.png # Add image post (optional)
+tags: [Blog, galaxies]
 author:  # Add name author (optional)
 ---
-This is a test page;lfask jfdl
+
 
 > Abell 370 is the best Frontier Field. 
 
