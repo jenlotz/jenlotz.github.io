@@ -1,9 +1,7 @@
 title: Jen Lotz's blog
 email: lotz@stsci.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ life, the universe, and everything.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -11,7 +9,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Author settings
 author: Jennifer Lotz # add your name
 author-pic: jenlotz.jpg
-about-author: My name is Jennifer Lotz
+about-author: My name is Jennifer Lotz.  I'm an astronomer at the Space Telescope Science Institute, hunting for the first galaxies in the universe and watching galaxies collide (v-e-r-y s-l-o-w-l-y). 
 
 # Contact links
 email: lotz@stsci.edu # Add your Email address
