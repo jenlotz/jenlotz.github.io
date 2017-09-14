@@ -12,5 +12,5 @@ author:  # Add name author (optional)
 > Abell 370 is the best Frontier Field. 
 
 
-![Abell 370]({{site.baseurl}}/assets/img/HFF-Abell370-cluster-crop-third-161103.png)
+#![Abell 370]({{site.baseurl}}/assets/img/HFF-Abell370-cluster-crop-third-161103.png)
 
