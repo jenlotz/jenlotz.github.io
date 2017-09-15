@@ -1,0 +1,10 @@
+---
+layout: post
+title: Scotland forever 
+date:   2017-09-15
+description:  # Add post description (optional)
+img: skye2.jpg # Add image post (optional)
+tags: [Blog, Scotland, Vikings]
+---
+Scotland, the Isle of Skye, Old Man Storr.  Vikings buried gold under this rock formation. 
+
