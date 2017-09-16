@@ -1,0 +1,10 @@
+---
+layout: post
+title: Learning python 
+date:   2017-09-16
+description:  # Add post description (optional)
+img: Medusa.jpg # Add image post (optional)
+tags: [Blog, Python]
+---
+I am learning python. 
+
