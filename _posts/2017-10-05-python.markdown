@@ -37,6 +37,6 @@ The output file looks like this:
 > fk5;circle(  53.1648153,  -27.8143715,  1") #text=" 10560" 
 > fk5;circle(  53.0393615,  -27.8018869,  1") #text=" 12122" 
 
-And, when display with the ds9 software,  you get this:
+And, when displayed with the ds9 software,  you get this:
 
-![alt text](https://github.com/jenlotz/jenlotz.github.io/assets/img/ds9.png "ds9 region display")
+[![Alt text](https://github.com/jenlotz/jenlotz.github.io/assets/img/ds9.png "ds9 region display")]
