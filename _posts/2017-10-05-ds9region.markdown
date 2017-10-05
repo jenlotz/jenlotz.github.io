@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing formatted text file from pandas dataframe
+title: Writing a formatted text file 
 date:   2017-10-05
 description:  How to make ds9 regions file from a pandas dataframe # Add post description (optional)
 img: Medusa.jpg # Add image post (optional)
