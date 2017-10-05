@@ -14,5 +14,5 @@ any ever seen before.  Did we succeed?  The answer is [definitely yes](http://ad
 
 Also,  we got alot of really nice pictures.   IMHO, Abell 370 is the best Frontier Field. 
 
-#![Abell 370]({{site.baseurl}}/assets/img/HFF-Abell370-cluster-crop-third-161103.png)
+![Abell 370]({{site.baseurl}}/assets/img/HFF-Abell370-cluster-crop-third-161103.png)
 
