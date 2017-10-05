@@ -39,4 +39,4 @@ The output file looks like this:
 
 And, when display with the ds9 software,  you get this:
 
-![alt text](https://github.com/jenlotz/jenlotz.github.io/tree/master/assets/img/ds9.png "ds9 region display")
+![alt text](https://github.com/jenlotz/jenlotz.github.io/assets/img/ds9.png "ds9 region display")
