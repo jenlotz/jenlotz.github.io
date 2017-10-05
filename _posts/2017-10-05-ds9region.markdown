@@ -1,0 +1,61 @@
+---
+layout: post
+title: Writing formatted text file from pandas dataframe
+date:   2017-10-05
+description:  How to make ds9 regions file from a pandas dataframe # Add post description (optional)
+img: Medusa.jpg # Add image post (optional)
+tags: [Blog, Python]
+---
+
+I really like pandas for reading and manipulating largish (~tens of thousands objects) astronomy catalogs in python. The pandas read_cvs function makes it very very easy to ingest these tables into a "dataframe", with headers and correct data type for each column. 
+
+However, the default functions for saving panda dataframes _to_ a file are not really built for formatted output.   df.to_cvs will basically spit out what you put in, with or without a header or indices, and optionally for a subset of columns.     
+
+One of the things I often want to do is actually LOOK at my galaxies,  to make sure that what the catalog says
+about them makes sense and there not some kind measurement error in the catalog. I mostly work with distant galaxies from Hubble Space Telescope survey images,  which might have thousands of galaxies in a single image. 
+
+The quick and easy way to check out the galaxies I'm interested in is to display the Hubble image in the [SAO ds9 software](http://ds9.si.edu/site/Home.html) and plot circles around them using a ["regions"](http://ds9.si.edu/doc/ref/region.html) file.   This is a text file with galaxy positions (Right Ascension and Declination) and maybe a galaxy label/id number.  However, this text file needs to be formatted in a particular way. 
+
+To make a ds9 regions file from a catalog read in with pandas: 
+```python
+import numpy as np
+import pandas as pd
+
+#read in a catalog with columns ID, RA, DEC, Z_SPEC, CLASS_STAR 
+#and probably lots of other things. 
+galcat = pd.read_csv(galaxyfile, delim_whitespace=True, header=0, comment='#')   
+
+#select quasar candidates: objects that look like stars but aren't.
+quasars = galcat[(galcat['Z_SPEC'] >=0.5) & (galcat['CLASS_STAR'] > 0.85)]  
+ 
+#open output regions file (needs .reg extension)
+f=open('quasars.reg', "w") 
+
+#for each quasar candidate, write regions file format for drawing 1" circle 
+#at RA,DEC (in degrees) with text label ID
+
+for r,d,x in zip(quasars['RA'], quasars['DEC'], quasars['ID']) :
+   f.write('fk5;circle(%12.7f, %12.7f, 1\") #text=\"%6i\" \n' % (r, d, x)  
+f.close()   
+```
+
+The output file looks like this:
+
+> fk5;circle(  53.1220463,  -27.9387409,  1") #text="   273" 
+
+
+> fk5;circle(  53.0788207,  -27.8840976,  1") #text="  3073" 
+
+
+> fk5;circle(  53.1743757,  -27.8673487,  1") #text="  4936" 
+
+
+> fk5;circle(  53.1648153,  -27.8143715,  1") #text=" 10560" 
+
+
+> fk5;circle(  53.0393615,  -27.8018869,  1") #text=" 12122" 
+
+
+And, when displayed with the ds9 software,  you get this:
+
+![ds9](https://jenlotz.github.io/assets/img/ds9.png "ds9 region display")

@@ -7,4 +7,4 @@ img: baltimore_love2.jpg # Add image post (optional)
 tags: [Blog, b'more]
 author: # Add name author (optional)
 ---
-I love Baltimore.
+I love Baltimore.  and [cats](https://charmkittycafe.com/). 

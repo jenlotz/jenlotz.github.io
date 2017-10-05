@@ -6,5 +6,16 @@ description:  # Add post description (optional)
 img: Medusa.jpg # Add image post (optional)
 tags: [Blog, Python]
 ---
-I am learning python. 
+I am learning python. I'm on sabbatical,  so I actually have time and the patience to learn something new. 
+My work consists mostly of reading in catalogs and plotting things,  so I'm using numpy, pandas, and 
+matplotlib.   Sometimes I use astropy for modelling,  or reading in images.   And when I'm really ambitious,
+I actually to compute my own numbers,  with astroML or scikit-learn. 
+
+resources:
+
+[Jake VdP's data science handbook] (https://github.com/jakevdp/PythonDataScienceHandbook)
+
+[AstroHackWeek 2017](https://github.com/AstroHackWeek/AstroHackWeek2017)
+
+[Astropy](http://www.astropy.org/)
 
