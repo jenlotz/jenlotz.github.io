@@ -7,15 +7,16 @@ img: Medusa.jpg # Add image post (optional)
 tags: [Blog, Python]
 ---
 I am learning python. I'm on sabbatical,  so I actually have time and the patience to learn something new. 
-My work consists mostly of reading in catalogs and plotting things,  so I'm using numpy, pandas, and 
-matplotlib.   Sometimes I use astropy for modelling,  or reading in images.   And when I'm really ambitious,
-I actually to compute my own numbers,  with astroML or scikit-learn. 
+My work consists mostly of reading in catalogs and plotting things,  so I'm using numpy, 
+[pandas](https://pandas.pydata.org/pandas-docs/stable/index.html), and 
+[matplotlib](http://matplotlib.org/).   Sometimes I use [astropy](http://www.astropy.org/) 
+for modelling,  or reading in images.   And when I'm really ambitious,
+I actually to compute my own numbers,  with [astroML](http://www.astroml.org/index.html) 
+or [scikit-learn](http://scikit-learn.org/stable/index.html). 
 
 resources:
 
-[Jake VdP's data science handbook] (https://github.com/jakevdp/PythonDataScienceHandbook)
+[Jake VdP's data science handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
 
 [AstroHackWeek 2017](https://github.com/AstroHackWeek/AstroHackWeek2017)
-
-[Astropy](http://www.astropy.org/)
 
