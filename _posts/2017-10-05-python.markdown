@@ -7,25 +7,33 @@ img: Medusa.jpg # Add image post (optional)
 tags: [Blog, Python]
 ---
 
-I really like pandas for reading and manipulating largish (~few 10k objects) astronomy catalogs.  A high fraction of my science involves selecting galaxies at various redshifts and looking to see what happens to their ensemble properties.  The pandas read_cvs function makes it very very easy to ingest these tables into a "dataframe", with headers and correct data type for each column.  However, the default functions for saving panda dataframes _to_ a file are not really built for formatted output.   df.to_cvs will basically spit out what you put in, with or without a header or indices, and optionally for a subset of columns.     
+I really like pandas for reading and manipulating largish (~tens of thousands objects) astronomy catalogs. The pandas read_cvs function makes it very very easy to ingest these tables into a "dataframe", with headers and correct data type for each column. 
+
+However, the default functions for saving panda dataframes _to_ a file are not really built for formatted output.   df.to_cvs will basically spit out what you put in, with or without a header or indices, and optionally for a subset of columns.     
 
 One of the things I often want to do is actually LOOK at my galaxies,  to make sure that what the catalog says
-about them makes sense and there not some kind measurement error in the catalog. I mostly work with distant galaxies from Hubble Space Telescope survey images,  which might have thousands of galaxies in a single image. The quick and easy way to check out the galaxies I'm interested in is to display the Hubble image in the SAO software "ds9" and plot circles around them using a "regions" file.   This is a text file with galaxy positions (Right Ascension and Declination) and maybe a galaxy label/id number.  However, this text file needs to be formatted in a particular way. 
+about them makes sense and there not some kind measurement error in the catalog. I mostly work with distant galaxies from Hubble Space Telescope survey images,  which might have thousands of galaxies in a single image. 
+
+The quick and easy way to check out the galaxies I'm interested in is to display the Hubble image in the SAO software "ds9" and plot circles around them using a "regions" file.   This is a text file with galaxy positions (Right Ascension and Declination) and maybe a galaxy label/id number.  However, this text file needs to be formatted in a particular way. 
 
 To make a ds9 regions file from a catalog read in with pandas: 
 ```python
 import numpy as np
 import pandas as pd
 
-galcat = pd.read_csv(galaxyfile, delim_whitespace=True, header=0, comment='#'   #this has columns ID, RA, DEC, Z_SPEC, CLASS_STAR and probably lots of other things. 
+#read in a catalog with columns ID, RA, DEC, Z_SPEC, CLASS_STAR and probably lots of other things. 
+galcat = pd.read_csv(galaxyfile, delim_whitespace=True, header=0, comment='#'   
 
-quasars = galcat[(galcat['Z_SPEC'] >=0.5) & (galcat['CLASS_STAR'] > 0.85)]   #select quasar candidates 
+#select quasar candidates: objects that look like stars but aren't.
+quasars = galcat[(galcat['Z_SPEC'] >=0.5) & (galcat['CLASS_STAR'] > 0.85)]  
+ 
+#open output regions file (needs .reg extension)
+f=open('quasars.reg', "w") 
 
-f=open('quasars.reg', "w")  #open output regions file (needs .reg extension)
+#for each quasar candidate, write regions file format for drawing 1" circle at RA,DEC with text label ID
 
 for r,d,x in zip(quasars['RA'], quasars['DEC'], quasars['ID']) :
-   f.write('fk5;circle(%12.7f, %12.7f, 1\") #text=\"%6i\" \n' % (r, d, x)   #for each quasar candidate, write regions file format for drawing 1" circle at RA,DEC with text label ID
-
+   f.write('fk5;circle(%12.7f, %12.7f, 1\") #text=\"%6i\" \n' % (r, d, x)  
 f.close()   
 ```
 
