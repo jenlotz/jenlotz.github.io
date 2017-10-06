@@ -1,0 +1,22 @@
+      {% if site.email %}
+        <li class="email"><a href="mailto:{{site.email}}"><i class="fa fa-envelope-o" title="Email"></i></a></li>
+      {% endif %}
+      {% if site.phone %}
+        <li class="phone"><a href="tel:{{site.phone}}"><i class="fa fa-phone" title="Phone"></i></a></li>
+      {% endif %}
+      {% if site.website %}
+        <li class="website"><a href="http://{{site.website}}" target="_blank" title="Website"><i class="fa fa-globe"></i></a></li>
+      {% endif %}
+      {% if site.github %}
+        <li class="github"><a href="http://github.com/{{site.github}}" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></li>
+      {% endif %}
+      {% if site.orcid %}
+        <li class="orcid"><a href="https://orcid.org/{{site.orcid}}" target="_blank" title="Orcid ID"><i class="fa fa-link"></i></a></li>
+      {% endif %}
+      {% if site.gscholar %}
+        <li class="gscholar"><a href="https://scholar.google.com/citations?hl=en&user={{site.gscholar}}" target="_blank" title="Google Scholar"><i class="fa fa-google"></i></a></li>
+      {% endif %}
+      {% if site.cv %}
+        <li class="cv"><a href="{{site.cv}}" target="_blank" title="CV"><i class="fa fa-file-pdf-o"></i></a></li>
+      {% endif %}
+
