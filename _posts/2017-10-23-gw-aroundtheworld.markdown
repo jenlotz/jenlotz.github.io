@@ -11,7 +11,7 @@ Gravity waves are cool, and everyone is going crazy over [the latest gravitation
 
 But, for me,  the coolest thing about the latest gravitational wave news is this map: 
 
-![gw](https://jenlotz.github.io/assets/img/gw_telescopes.png "Telescopes around the world follow up GW counterpart"
+![gw]({{site.baseurl}}/assets/img/gw_telescopes.png) "Telescopes around the world follow up GW counterpart"
 
 Thousands of astronomers, all over the world, on every continent, stopped whatever else they were doing to point whatever telescope they had to collectively figure out this awesome new thing in the sky.  That's alot of excited emails, texts, tweets, Skype calls, coffee and late night data analysis.   
 
