@@ -3,7 +3,7 @@ layout: post
 title: The best thing about astronomy  
 date:   2017-10-23
 description:  GW around the world # Add post description (optional)
-img: gw_telescopes.jpg # Add image post (optional)
+img: gw_telescopes.png # Add image post (optional)
 tags: [Blog, astronomy, scotland]
 ---
 
@@ -11,7 +11,7 @@ Gravity waves are cool, and everyone is going crazy over [the latest gravitation
 
 But, for me,  the coolest thing about the latest gravitational wave news is this map: 
 
-![gw]({{site.baseurl}}/assets/img/gw_telescopes.png) "Telescopes around the world follow up GW counterpart"
+![GW around the world]({{site.baseurl}}/assets/img/gw_telescopes.png)
 
 Thousands of astronomers, all over the world, on every continent, stopped whatever else they were doing to point whatever telescope they had to collectively figure out this awesome new thing in the sky.  That's alot of excited emails, texts, tweets, Skype calls, coffee and late night data analysis.   
 
