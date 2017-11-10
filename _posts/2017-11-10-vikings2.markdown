@@ -1,0 +1,16 @@
+---
+layout: post
+title:  Vikings Rule part 2
+date:   2017-08-25 13:32:20 +0300
+description:  # Add post description (optional)
+img: viking2.png # Add image post (optional)
+tags: [Blog, Vikings, Galaxies]
+---
+Lots of twitter/facebook drama over the past few days-- the article in
+Forbes ["Professional Disagreement Over Galaxies Escalates Into Bullying And Harassment"](https://www.forbes.com/sites/startswithabang/2017/11/10/professional-disagreement-over-galaxies-escalates-into-bullying-and-harassment/#4fc23b1370fa) does
+an excellent job describing the problems.    
+
+Toxicity in the field of high-redshift galaxies has been a problem for a very long time.   I'm hoping that in
+the new 'dawn' of the James Webb Space Telescope,  our community can grow-up and figure out how to do excellent, inspiration science without acting like this.   I'm not convinced that the science contributions of a few outweigh the science lost by their unprofessional actions;   this issue has certainly taken up alot of time and personal energy that my co-authors and I would have much rather spent writing papers and discovering new things about the universe. 
+
+
