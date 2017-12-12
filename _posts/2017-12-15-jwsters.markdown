@@ -1,0 +1,18 @@
+---
+layout: post
+title:  Early Science with the Webb Space Telescope
+date:   2017-12-15 13:32:20 +0300
+description:  # Add post description (optional)
+img: jwst_cryo.jpg # Add image post (optional)
+tags: [Blog, Galaxies]
+---
+The first proposals to use the new James Webb Space Telescope [have been selected](https://jwst.stsci.edu/news-events/news/News%20items/selections-made-for-the-jwst-directors-discretionary-early-release-science-program),  and my team's proposal - "The Cosmic Evolution Early Release Science Survey" - was one of 13 programs selected!  [Scientific American has a very nice overview](https://www.scientificamerican.com/article/what-will-nasa-rsquo-s-biggest-ever-space-telescope-study-first/) of all the different science planned for this first set of JWST data. Now we just have to wait another two years for the launch and commissioning before the data is collected sometime in fall of 2019.  
+
+We chose to ask for time to look at a field known as "the Extended Groth Strip", a particularly dark patch of the Northern sky.   Of all the well-studied extra-galactic fields previously targeted by the NASA Great Observatories - Hubble, Spitzer, and Chandra -- the Extended Groth Strip is [visible to JWST for longest period of time]{https://jwst.stsci.edu/instrumentation/telescope-and-pointing/pointing-and-guiding} due to its location.   We asked for 63 hours of time to use 3JWST instruments (NIRCam, MIRI, and NIRSpec), getting both deep imaging and deep spectroscopy of faint distant galaxies with lookback times as much as 13.1 billion years into the past. 
+
+![JWST CEERS observations of EGS]({{site.baseurl}}/assets/img/EGS.F0V7.png)
+
+This award feels like the cumulation of alot of work I've done over my career. 
+I've been working on preparing for the launch of the James Webb Space Telescope ever since I arrived at STScI in 2010, first as an instrument scientist for the Near-Infrared Camera (NIRCam) and most recently as the lead of the team preparing the [astronomer's user manual (aka "JDox")](https:/jwst-docs.stsci.edu).  And I've been studying this particular part of the sky for even longer, starting as a postdoctoral scholar collaborating with the [DEEP and AEGIS teams at UC Santa Cruz]{aegis.ucolick.org} since ~2003.   There are some really interesting galaxies in this part of the sky, and I can't wait to see what new ones JWST discovers. 
+
+![Zoom of HST ACS image of the Extended Groth Strip]({{site.baseurl}}/assets/img/egs_zoom.png)
